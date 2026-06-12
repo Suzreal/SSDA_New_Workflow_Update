@@ -15,12 +15,6 @@
 ├── Text data/
 │   ├── SSDA_xxxx_xxxx_Gemini_V2.json -> The raw output from Archivault
 ```
-graph TD
-    A[Raw Image] --> B[Archvault output]
-    B --> C[LLM fixing records]
-    C --> D[Normalize Text]
-    D --> E[Extract identities]
-    E --> F[Output Json]
 
 
 ```mermaid
