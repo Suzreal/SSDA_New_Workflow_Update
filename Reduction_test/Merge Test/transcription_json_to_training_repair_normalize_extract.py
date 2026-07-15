@@ -369,7 +369,7 @@ def parse_llm_json_response(text: str) -> Dict[str, Any]:
         raise
 
 
-# the funciton here ensures:
+# This function ensures
 # entries is a list
 # dropped_fragments is a list
 # each entry has non-empty raw text
@@ -531,6 +531,10 @@ def deduplicate_repaired_entries(entries: List[Dict[str, Any]]) -> List[Dict[str
         unique.append(e)
 
     return unique
+
+# =============================================================================
+# Above is the function we want to fix
+# =============================================================================
 
 
 def normalize_repaired_entry_ids(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
